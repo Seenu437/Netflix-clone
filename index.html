@@ -3,23 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflix Clone</title>
+  <title>Netflix Clone - Upgraded</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav id="navbar">
-    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
-    <img class="avatar" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="User Avatar">
+  <!-- Navigation (Expanded with real links and icons) -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-left">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">New & Popular</a>
+        <a href="#">My List</a>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <i class="fa-solid fa-search search-icon"></i>
+      <i class="fa-solid fa-bell notification-icon"></i>
+      <div class="profile-group">
+        <img class="avatar" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="User Avatar">
+        <span class="user-name">Guest</span>
+        <i class="fa-solid fa-caret-down"></i>
+      </div>
+    </div>
   </nav>
 
-  <!-- Featured Movie Banner -->
+  <!-- Hero Banner (Polished with stylized buttons and high-res image) -->
   <header class="banner">
     <div class="banner-content">
       <h1 class="banner-title">Money Heist</h1>
       <div class="banner-buttons">
-        <button class="banner-button">Play</button>
-        <button class="banner-button">My List</button>
+        <button class="banner-button play-button"><i class="fa-solid fa-play"></i> Play</button>
+        <button class="banner-button my-list-button"><i class="fa-solid fa-plus"></i> My List</button>
       </div>
       <p class="banner-description">
         To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose.
@@ -28,14 +47,24 @@
     <div class="banner-fadeBottom"></div>
   </header>
 
-  <!-- Content Rows -->
+  <!-- Multiple Rich Content Rows (Vastly expanded) -->
   <section class="row">
     <h2>Trending Now</h2>
     <div class="row-posters">
-      <img class="row-poster row-posterLarge" src="https://image.tmdb.org/t/p/original/9PFonBhy4cQy7Jz20NpMygczOoO.jpg" alt="Movie 1">
-      <img class="row-poster row-posterLarge" src="https://image.tmdb.org/t/p/original/bZvn77TzYQk8A5Ew6W4F3t97iO3.jpg" alt="Movie 2">
-      <img class="row-poster row-posterLarge" src="https://image.tmdb.org/t/p/original/xGUINg5XGLg4q2r54qC9TtaOaP8.jpg" alt="Movie 3">
-      <img class="row-poster row-posterLarge" src="https://image.tmdb.org/t/p/original/11BwA214nZ0bZ6k7qR9aX6v0r5D.jpg" alt="Movie 4">
+      <img class="row-poster row-posterLarge" src="https://image.tmdb.org/t/p/original/9PFonBhy4cQy7Jz20NpMygczOoO.jpg" alt="Trending 1">
+      <img class="row-poster row-posterLarge" src="https://image.tmdb.org/t/p/original/bZvn77TzYQk8A5Ew6W4F3t97iO3.jpg" alt="Trending 2">
+      <img class="row-poster row-posterLarge" src="https://image.tmdb.org/t/p/original/xGUINg5XGLg4q2r54qC9TtaOaP8.jpg" alt="Trending 3">
+      <img class="row-poster row-posterLarge" src="https://image.tmdb.org/t/p/original/11BwA214nZ0bZ6k7qR9aX6v0r5D.jpg" alt="Trending 4">
+    </div>
+  </section>
+
+  <section class="row">
+    <h2>Netflix Originals</h2>
+    <div class="row-posters">
+      <img class="row-poster" src="https://image.tmdb.org/t/p/original/gLhYg9NIvIPKVRTtvzCWnp1qJWG.jpg" alt="Original 1">
+      <img class="row-poster" src="https://image.tmdb.org/t/p/original/lJAw45VbWb0b5f14M8XfCj2bL4.jpg" alt="Original 2">
+      <img class="row-poster" src="https://image.tmdb.org/t/p/original/tD0v5vB8A3vU4SgD2nU2w7qR0rT.jpg" alt="Original 3">
+      <img class="row-poster" src="https://image.tmdb.org/t/p/original/6K2L56H7g4wS2s04b8zP1zM8mK9.jpg" alt="Original 4">
     </div>
   </section>
 
